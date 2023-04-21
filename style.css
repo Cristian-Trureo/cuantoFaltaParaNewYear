@@ -1,0 +1,71 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: #202020; */
+  color:#fff;
+}
+
+.fondo{
+  width: 100%;
+  min-height:100vh;
+  background-image: url("img/esfera.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+#tiemporestante{
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(4, 24, 253, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  /* padding:20px; */
+  height: auto;
+  width: 500px;
+  min-width: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+
+h1{
+  color: white;
+  margin:20px auto;
+  /* background-color: black; */
+  height: 30px;
+}
+
+p {
+  text-align: center;
+  margin:30px auto;
+  color: greenyellow;
+  font-size: 20px;
+}
+
+h2{
+  text-align: center;
+  margin:50px auto 0 ;
+}
+
+@media (max-width:576px){
+  .fondo{
+    height: auto;
+    width: auto;
+  }
+  #tiemporestante{
+    width: 80%;
+    margin:  auto;
+  }
+  p{
+    font-size: 16px;
+  }
+}
