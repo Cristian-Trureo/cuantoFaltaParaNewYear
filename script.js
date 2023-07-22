@@ -32,11 +32,11 @@ function mostrarFechaF() {
 }
 
 mostrarFecha();
-mostrarFaltante18()
+
 mostrarFechaF();
 
 
 setInterval(mostrarFecha, 1000);
-setInterval(mostrarFaltante18, 1000);
+
 
 setInterval(mostrarFechaF, 1000);
