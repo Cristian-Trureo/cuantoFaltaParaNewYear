@@ -1,6 +1,6 @@
 var parrafo = document.getElementById('today');
 var parrafoF = document.getElementById('faltan');
-var parrafoS = document.getElementById('falta18');
+
 
 function mostrarFecha() {
   var ahora = new Date();
@@ -9,16 +9,6 @@ function mostrarFecha() {
   parrafo.innerHTML = fechaActual;
 }
 
-function mostrarFaltante18(){
-  var ahora = new Date();
-  var proximo18 = new Date("September 18, 2023 00:00:00");
-  var diferenciaMSS = proximo18.getTime() - ahora.getTime();
-  var segundosS = Math.floor(diferenciaMSS / 1000);
-  var minutosS = Math.floor(segundosS / 60);
-  var horasS = Math.floor(minutosS / 60);
-  var diasS = Math.floor(horasS / 24);
-  parrafoS.innerHTML = `${diasS} días ${horasS % 24} horas ${minutosS % 60} minutos ${segundosS % 60} segundos`;
-}
 
 function mostrarFechaF() {
   var ahora = new Date();
