@@ -1,13 +1,13 @@
 var parrafo = document.getElementById('today');
 var parrafoF = document.getElementById('faltan');
 
+
 function mostrarFecha() {
   var ahora = new Date();
   var opciones = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'};
   var fechaActual = ahora.toLocaleDateString('es-ES', opciones);
   parrafo.innerHTML = fechaActual;
 }
-
 
 
 function mostrarFechaF() {
@@ -21,11 +21,12 @@ function mostrarFechaF() {
   parrafoF.innerHTML = `${diasF} días ${horasF % 24} horas ${minutosF % 60} minutos ${segundosF % 60} segundos`;
 }
 
+mostrarFecha();
+
+mostrarFechaF();
 
 
 setInterval(mostrarFecha, 1000);
-setInterval(function() {
-  mostrarFaltante18("January", 2, 2024);
-}, 1000);
+
 
 setInterval(mostrarFechaF, 1000);
